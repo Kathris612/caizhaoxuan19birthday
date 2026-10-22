@@ -747,9 +747,12 @@ canvas {
   z-index: 5;
   pointer-events: none;
   opacity: 0;
-  background:
-    radial-gradient(circle at 32% 33%, rgba(255, 247, 222, 0.34), transparent 36%),
-    linear-gradient(115deg, transparent 34%, rgba(255, 228, 174, 0.12) 48%, transparent 62%);
+  background: radial-gradient(
+    ellipse at 50% 44%,
+    rgba(255, 244, 218, 0.3) 0%,
+    rgba(255, 225, 170, 0.08) 34%,
+    transparent 68%
+  );
   mix-blend-mode: screen;
 }
 
@@ -763,6 +766,7 @@ canvas {
 
 .cake-3d.is-flipping .cake-svg {
   animation: cakeFlip 1.75s var(--ease) both;
+  filter: none;
 }
 
 .cake-svg .portrait-topper {
